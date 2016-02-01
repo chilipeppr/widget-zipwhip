@@ -33,7 +33,7 @@ cpdefine("inline:com-chilipeppr-elem-zipwhip", ["chilipeppr_ready", /*"zipwhipPh
         url: "http://fiddle.jshell.net/chilipeppr/56X9G/show/light/",
         fiddleurl: "http://jsfiddle.net/chilipeppr/56X9G/",
         name: "Element / Zipwhip",
-        desc: "This element sends texts to the user upon certain events.",
+        desc: "A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done.",
         foreignSubscribe: {
             "/com-chilipeppr-widget-gcode/done" : "When we see this signal, we send the text indicating the job is done running.",
             "/com-chilipeppr-widget-gcode/onpause" : "When we see this signal, we check if it was from an M6 which comes in the 2nd parameter. If it is, we know to trigger a text to you to do a tool change."
