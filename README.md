@@ -14,10 +14,10 @@ not conflict with other ChiliPeppr widgets.
 | ID                    | com-chilipeppr-elem-zipwhip |
 | Name                  | Element / Zipwhip |
 | Description           | A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done. |
-| chilipeppr.load() URL | http://raw.githubusercontent.com/raykholo/widget-zipwhip/master/auto-generated-widget.html |
-| Edit URL              | http://ide.c9.io/raykholo/widget-zipwhip |
-| Github URL            | http://github.com/raykholo/widget-zipwhip |
-| Test URL              | https://preview.c9users.io/raykholo/widget-zipwhip/widget.html |
+| chilipeppr.load() URL | http://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html |
+| Edit URL              | http://ide.c9.io/chilipeppr/widget-zipwhip |
+| Github URL            | http://github.com/chilipeppr/widget-zipwhip |
+| Test URL              | https://preview.c9users.io/chilipeppr/widget-zipwhip/widget.html |
 
 ## Example Code for chilipeppr.load() Statement
 
@@ -30,7 +30,7 @@ back the instance of it.
 ```javascript
 chilipeppr.load(
   "#myDivWidgetInsertedInto",
-  "http://raw.githubusercontent.com/raykholo/widget-zipwhip/master/auto-generated-widget.html",
+  "http://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html",
   function() {
     // Callback after widget loaded into #myDivWidgetInsertedInto
     cprequire(
