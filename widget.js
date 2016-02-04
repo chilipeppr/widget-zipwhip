@@ -30,8 +30,10 @@ cprequire_test(["inline:com-chilipeppr-elem-zipwhip"], function (zipwhip) {
 cpdefine("inline:com-chilipeppr-elem-zipwhip", ["chilipeppr_ready", /*"zipwhipPhoneFormat",*/ "jquerycookie"], function () {
     return {
         id: "com-chilipeppr-elem-zipwhip",
-        url: "http://fiddle.jshell.net/chilipeppr/56X9G/show/light/",
-        fiddleurl: "http://jsfiddle.net/chilipeppr/56X9G/",
+        url: "(auto fill by runme.js)",       // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
+        fiddleurl: "(auto fill by runme.js)", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
+        githuburl: "(auto fill by runme.js)", // The backing github repo
+        testurl: "(auto fill by runme.js)",   // The standalone working widget so can view it working by itself
         name: "Element / Zipwhip",
         desc: "A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done.",
         foreignSubscribe: {
