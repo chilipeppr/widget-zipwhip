@@ -28,17 +28,21 @@ Javascript. Then you use cprequire() to find your widget's Javascript and get
 back the instance of it.
 
 ```javascript
+// Inject new div to contain widget or use an existing div with an ID
+$("body").append('<' + 'div id="myDivElemZipwhip"><' + '/div>');
+
 chilipeppr.load(
-  "#myDivWidgetInsertedInto",
+  "#myDivElemZipwhip",
   "http://raw.githubusercontent.com/raykholo/widget-zipwhip/master/auto-generated-widget.html",
   function() {
-    // Callback after widget loaded into #myDivWidgetInsertedInto
+    // Callback after widget loaded into #myDivElemZipwhip
+    // Now use require.js to get reference to instantiated widget
     cprequire(
       ["inline:com-chilipeppr-elem-zipwhip"], // the id you gave your widget
-      function(mywidget) {
-        // Callback that is passed reference to your newly loaded widget
-        console.log("My widget just got loaded.", mywidget);
-        mywidget.init();
+      function(myObjElemZipwhip) {
+        // Callback that is passed reference to the newly loaded widget
+        console.log("Element / Zipwhip just got loaded.", myObjElemZipwhip);
+        myObjElemZipwhip.init();
       }
     );
   }
