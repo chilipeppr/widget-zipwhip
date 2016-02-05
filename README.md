@@ -1,7 +1,7 @@
 # com-chilipeppr-elem-zipwhip
 A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done.
 
-
+![alt text](screenshot.png "Screenshot")
 
 ## ChiliPeppr Element / Zipwhip
 
