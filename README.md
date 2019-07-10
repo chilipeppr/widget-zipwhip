@@ -14,10 +14,10 @@ not conflict with other ChiliPeppr widgets.
 | ID                    | com-chilipeppr-elem-zipwhip |
 | Name                  | Element / Zipwhip |
 | Description           | A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done. |
-| chilipeppr.load() URL | http://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html |
-| Edit URL              | http://ide.c9.io/chilipeppr/widget-zipwhip |
-| Github URL            | http://github.com/chilipeppr/widget-zipwhip |
-| Test URL              | https://preview.c9users.io/chilipeppr/widget-zipwhip/widget.html |
+| chilipeppr.load() URL | https://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html |
+| Edit URL              | (Local dev. No edit URL) |
+| Github URL            | https://github.com/chilipeppr/widget-zipwhip |
+| Test URL              | http://localhost:9000/widget.html |
 
 ## Example Code for chilipeppr.load() Statement
 
@@ -33,7 +33,7 @@ $("body").append('<' + 'div id="myDivElemZipwhip"><' + '/div>');
 
 chilipeppr.load(
   "#myDivElemZipwhip",
-  "http://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html",
+  "https://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html",
   function() {
     // Callback after widget loaded into #myDivElemZipwhip
     // Now use require.js to get reference to instantiated widget
@@ -132,7 +132,7 @@ The table below shows, in order, the methods and properties inside the widget/el
           </tr>
       </thead>
       <tbody>
-      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-elem-zipwhip"</td></tr><tr valign="top"><td>url</td><td>string</td><td>"http://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"http://ide.c9.io/chilipeppr/widget-zipwhip"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"http://github.com/chilipeppr/widget-zipwhip"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://widget-zipwhip-chilipeppr.c9users.io/widget.html"</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Element / Zipwhip"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done."</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>settings</td><td>object</td><td></td></tr><tr valign="top"><td>locale</td><td>object</td><td></td></tr><tr valign="top"><td>init</td><td>function</td><td>function () </td></tr><tr valign="top"><td>getIpInfo</td><td>function</td><td>function (callback) </td></tr><tr valign="top"><td>rawPhone</td><td>function</td><td>function (phone) </td></tr><tr valign="top"><td>formatPhone</td><td>function</td><td>function (phone, sessionkey, callback) </td></tr><tr valign="top"><td>formatPhoneViaCall</td><td>function</td><td>function (phone, callback) </td></tr><tr valign="top"><td>subscribeSetup</td><td>function</td><td>function () </td></tr><tr valign="top"><td>formSetup</td><td>function</td><td>function () </td></tr><tr valign="top"><td>sendText</td><td>function</td><td>function (body) </td></tr><tr valign="top"><td>onTest</td><td>function</td><td>function () </td></tr><tr valign="top"><td>onDone</td><td>function</td><td>function (msg) </td></tr><tr valign="top"><td>onPause</td><td>function</td><td>function (param1, param2) </td></tr><tr valign="top"><td>getSettings</td><td>function</td><td>function () </td></tr><tr valign="top"><td>saveSettings</td><td>function</td><td>function () </td></tr><tr valign="top"><td>formatInternationalNumber</td><td>function</td><td>function (value)</td></tr><tr valign="top"><td>forkSetup</td><td>function</td><td>function () </td></tr>
+      <tr valign="top"><td>id</td><td>string</td><td>"com-chilipeppr-elem-zipwhip"</td></tr><tr valign="top"><td>url</td><td>string</td><td>"https://raw.githubusercontent.com/chilipeppr/widget-zipwhip/master/auto-generated-widget.html"</td></tr><tr valign="top"><td>fiddleurl</td><td>string</td><td>"(Local dev. No edit URL)"</td></tr><tr valign="top"><td>githuburl</td><td>string</td><td>"https://github.com/chilipeppr/widget-zipwhip"</td></tr><tr valign="top"><td>testurl</td><td>string</td><td>"http://localhost:9000/widget.html"</td></tr><tr valign="top"><td>name</td><td>string</td><td>"Element / Zipwhip"</td></tr><tr valign="top"><td>desc</td><td>string</td><td>"A widget for ChiliPeppr that lets you send text messages upon events occurring inside ChiliPeppr, i.e. text yourself when a CNC job is done."</td></tr><tr valign="top"><td>foreignSubscribe</td><td>object</td><td>Please see docs above.</td></tr><tr valign="top"><td>settings</td><td>object</td><td></td></tr><tr valign="top"><td>locale</td><td>object</td><td></td></tr><tr valign="top"><td>init</td><td>function</td><td>function () </td></tr><tr valign="top"><td>getIpInfo</td><td>function</td><td>function(callback) </td></tr><tr valign="top"><td>rawPhone</td><td>function</td><td>function(phone) </td></tr><tr valign="top"><td>formatPhone</td><td>function</td><td>function(phone, sessionkey, callback) </td></tr><tr valign="top"><td>formatPhoneViaCall</td><td>function</td><td>function(phone, callback) </td></tr><tr valign="top"><td>subscribeSetup</td><td>function</td><td>function() </td></tr><tr valign="top"><td>formSetup</td><td>function</td><td>function() </td></tr><tr valign="top"><td>sendText</td><td>function</td><td>function(body) </td></tr><tr valign="top"><td>onTest</td><td>function</td><td>function() </td></tr><tr valign="top"><td>onDone</td><td>function</td><td>function(msg) </td></tr><tr valign="top"><td>onPause</td><td>function</td><td>function(param1, param2) </td></tr><tr valign="top"><td>getSettings</td><td>function</td><td>function() </td></tr><tr valign="top"><td>saveSettings</td><td>function</td><td>function() </td></tr><tr valign="top"><td>formatInternationalNumber</td><td>function</td><td>function(value)</td></tr><tr valign="top"><td>forkSetup</td><td>function</td><td>function () </td></tr>
       </tbody>
   </table>
 

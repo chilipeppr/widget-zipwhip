@@ -164,7 +164,8 @@ cpdefine("inline:com-chilipeppr-elem-zipwhip", ["chilipeppr_ready", /*"zipwhipPh
             var pn = this.settings.phone;
             pn = pn.replace(/\D/g, ""); // remove anything but digits
             pn = "ptn:/" + pn;
-            var url = "http://api.zipwhip.com/message/send";
+            console.log("phone number:", pn);
+            var url = "https://api.zipwhip.com/message/send";
             var data = {
                 session: "-fill-from-server-session-",
                 contacts: pn,
@@ -173,8 +174,8 @@ cpdefine("inline:com-chilipeppr-elem-zipwhip", ["chilipeppr_ready", /*"zipwhipPh
             };
             var urlget = url + "?" + $.param(data);
             console.log("going to use chilipeppr geturl. here's our getstr:", urlget);
-            //urlget = encodeURIComponent(urlget);
-            console.log("after encoding:", urlget);
+            urlgetEncoded = encodeURIComponent(urlget);
+            console.log("after encoding:", urlgetEncoded);
             //console.log("sending test msg. data:", data);
             
             $.ajax({
@@ -351,7 +352,8 @@ cpdefine("inline:com-chilipeppr-elem-zipwhip", ["chilipeppr_ready", /*"zipwhipPh
             });
 
             var that = this;
-            chilipeppr.load("http://fiddle.jshell.net/chilipeppr/zMbL9/show/light/", function () {
+            chilipeppr.load("http://raw.githubusercontent.com/chilipeppr/widget-pubsubviewer/master/auto-generated-widget.html", function() {
+            // chilipeppr.load("http://fiddle.jshell.net/chilipeppr/zMbL9/show/light/", function () {
                 require(['inline:com-chilipeppr-elem-pubsubviewer'], function (pubsubviewer) {
                     pubsubviewer.attachTo($(topCssSelector + ' .panel-heading .dropdown-menu'), that);
                 });
